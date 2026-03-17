@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden font-sans">
+   <section className="relative min-h-screen w-full flex items-center justify-start overflow-hidden font-sans">
       
       {/* 1. Background Image Layer */}
       <div 
@@ -17,9 +17,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/30 z-[1]" />
 
       {/* 3. Main Content Wrapper */}
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 py-12 md:px-12 lg:px-20">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 py-12 md:px-12 lg:px-">
         {/* Updated Grid: Left side 1 part, Right side 1.2 parts for more form width */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
           {/* Left Side: Content (Width thori kam kar di) */}
           <div className="text-white space-y-8  lg:pr-10">
@@ -46,9 +46,9 @@ const HeroSection = () => {
           </div>
 
           {/* Right Side: Login Box (Width increased) */}
-          <div className="flex justify-center lg:justify-end w-full">
+          <div className="flex justify-center lg:justify-end h-full w-full ">
             {/* Box max-width increased to 550px for more horizontal space */}
-            <div className="w-full max-w-[550px] bg-transparent border border-white/20 rounded-lg p-8 md:p-10 shadow-none">
+            <div className="w-full max-w-[550 bg-transparent border border-white/20 rounded-lg p-8 md:p-10 shadow-none">
               <h2 className="text-3xl font-semibold text-white mb-8 tracking-tight drop-shadow-xl text-center lg:text-left">Login</h2>
               
               <form className="space-y-6">
@@ -79,23 +79,20 @@ const HeroSection = () => {
                   Log In
                 </button>
 
-                <div className="flex gap-4 text-[11px] text-white/90 pt-2 uppercase tracking-tighter font-medium drop-shadow-md">
-                  <a href="#" className="hover:text-white transition-colors underline underline-offset-4">Lost your password?</a>
-                  <span className="text-white/30">|</span>
+                <div className="flex gap-1 text-[11px] text-white/90 pt-2 uppercase tracking-tighter font-medium drop-shadow-md">
+                  <a href="#" className="hover:text-white transition-colors underline underline-offset-4">Lost your password ?</a>
+                  {/* <span className="text-white/30">|</span> */}
                   <a href="#" className="hover:text-white transition-colors font-bold">Register</a>
                 </div>
 
                 {/* Social Login Buttons */}
                 <div className="space-y-4 pt-6">
-                  <button className="w-full bg-white hover:bg-gray-100 text-black py-3 px-4 rounded flex items-center justify-center gap-3 font-semibold text-sm transition-all shadow-md">
+                  <button className="w-f bg-white hover:bg-gray-100 text-black py-3 px-4 rounded flex items-center justify-center gap-3 font-semibold text-sm transition-all shadow-md">
                     <img src="https://www.svgrepo.com/show/475656/google-color.svg" className="w-5 h-5" alt="G" />
                     Continue with <span className="font-extrabold text-[13px]">Google</span>
                   </button>
                   
-                  <button className="w-full bg-[#2f2f2f] hover:bg-[#3f3f3f] text-white py-3 px-4 rounded flex items-center justify-center gap-3 font-semibold text-sm transition-all border border-white/10 shadow-md">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" className="w-5 h-5" alt="M" />
-                    Continue with <span className="font-extrabold text-[13px]">Microsoft</span>
-                  </button>
+                 
                 </div>
               </form>
             </div>
