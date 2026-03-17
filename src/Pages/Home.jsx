@@ -3,6 +3,7 @@ import HeroSection from '../Components/homeComponents/HeroSection';
 import GuaranteeSection from '../Components/homeComponents/GuaranteeSection';
 import FeaturesSection from '../Components/homeComponents/FeaturesSection';
 import FAQSection from '../Components/homeComponents/FAQSection';
+
 import QuoteBanner from '../Components/homeComponents/QuoteBanner';
 
 function Home() {
